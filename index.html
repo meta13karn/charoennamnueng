@@ -1,472 +1,434 @@
-<!DOCTYPE html><html lang="th" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>เจริญแหนมเนือง - อาหารเวียดนาม สดใหม่ คุณภาพระดับพรีเมียม</title>
-<!-- Google Fonts: Prompt for authentic Thai typography matching the design -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
-<!-- Font Awesome Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-<!-- Tailwind CSS CDN with plugins -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Tailwind Configuration matching the brand colors -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Prompt', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              red: '#cb1c1d',
-              redHover: '#b21516',
-              maroon: '#801314',
-              maroonDark: '#6b0f10',
-              cream: '#f9f6f0',
-              lightGray: '#f8f8f8',
-              accentPill: '#f3e8e4'
-            }
-          }
-        }
-      }
-    }
-  </script>
-<!-- Custom CSS for specialized styles -->
-<style data-purpose="custom-utilities">
-    body {
-      font-family: 'Prompt', sans-serif;
-      color: #222222;
-      background-color: #ffffff;
-      -webkit-font-smoothing: antialiased;
-    }
-    .hero-gradient-overlay {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.65) 45%, rgba(0, 0, 0, 0.1) 85%);
-    }
-    .banner-dark-overlay {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%);
-    }
-  </style>
-</head>
-<body class="bg-white text-gray-800 antialiased selection:bg-brand-red selection:text-white">
-<!-- BEGIN: MainHeader -->
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all" data-purpose="navigation-bar">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<!-- Brand Logo -->
-<a class="flex items-center gap-3 group" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp4CpGIjktf4KqGdbI7JlPYKGrKtu-MHatGXks0KHtiMBOejwlGlLg-T1UkUwzc23N4U58ntiNuBwyqioFQScMvsAieuvEARfhHfRTlSVeKF4BIXsaJGYKSDmAv9RYQE81ljgwyt-VVk8sbM4QdeR2UkzTnOu6E3R7ZHZp3HglTh0-6ouqq_agj_ZHZ23Z3MOve6GHkc1NpX2dzOSWEsL116e9Ipn13ax0nTZBLicmcMeDBZVrpaFIu7HMY_89xwk10Fk" alt="เจริญแหนมเนือง โลโก้" class="w-12 h-12 rounded-full object-cover shadow-md group-hover:scale-105 transition-transform duration-200"><div class="flex flex-col leading-tight"><span class="text-2xl font-black tracking-tight text-brand-red">เจริญ</span><span class="text-xs font-bold tracking-widest text-brand-maroon uppercase">แหนมเนือง</span></div></a>
-<!-- Desktop Navigation Menu -->
-<nav class="hidden md:flex items-center space-x-7 text-sm font-medium">
-<a class="text-brand-red font-semibold hover:text-brand-redHover transition-colors border-b-2 border-brand-red pb-0.5" href="#home">หน้าแรก</a>
-<a class="text-gray-700 hover:text-brand-red transition-colors" href="#menu">เมนู</a>
-<a class="text-gray-700 hover:text-brand-red transition-colors" href="#branches">สาขา</a>
-<a class="text-gray-700 hover:text-brand-red transition-colors" href="#wholesale">ขายส่ง</a>
-<a class="text-gray-700 hover:text-brand-red transition-colors" href="#catering">ออกบูธ</a>
-<a class="text-gray-700 hover:text-brand-red transition-colors" href="#about">เกี่ยวกับเรา</a>
-<a class="text-gray-700 hover:text-brand-red transition-colors" href="#contact">ติดต่อเรา</a>
-</nav>
-<!-- CTA Button -->
-<div class="flex items-center">
-<a class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-red hover:bg-brand-redHover text-white rounded-full text-sm font-semibold tracking-wide shadow-md hover:shadow-lg transition duration-200 hover:-translate-y-0.5 active:translate-y-0" href="https://line.me" rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-line text-lg"></i>
-<span class="">สั่งเลย / สอบถาม</span>
-</a>
+<!DOCTYPE html>
+
+<html class="light" lang="th" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>หน้าแรก - เจริญแหนมเนือง</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&amp;family=Mitr:wght@400;500;600;700&amp;family=Prompt:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style id="brand-typography">body, html, .font-body-md, .font-body-sm, .font-body-lg { font-family: 'Prompt', 'Kanit', sans-serif !important; } h1, h2, h3, h4, .font-headline-lg, .font-headline-lg-mobile, .font-headline-md, .font-headline-sm, .font-title-md, [class*="font-headline"], [class*="font-title"], [class*="text-2xl"], [class*="text-3xl"], [class*="text-xl"] { font-family: 'Mitr', 'Kanit', sans-serif !important; font-weight: 700 !important; letter-spacing: -0.02em; } button, a, .btn, [class*="rounded-full"], .font-label-lg, .font-label-md, .font-label-sm, [class*="font-label"] { font-family: 'Kanit', 'Prompt', sans-serif !important; font-weight: 600 !important; } .material-symbols-outlined { font-family: 'Material Symbols Outlined' !important; font-weight: normal !important; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#574141", "on-background": "#201a18", "on-primary-fixed": "#410008", "secondary-fixed-dim": "#ffb3b2", "on-primary-container": "#ffa1a1", "background": "#fff8f6", "error": "#ba1a1a", "on-secondary-container": "#772429", "on-secondary-fixed-variant": "#7e292e", "tertiary-container": "#9b000e", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "tertiary-fixed-dim": "#ffb4ab", "on-tertiary-fixed": "#410002", "on-tertiary-fixed-variant": "#93000d", "surface-container-low": "#fef1ed", "surface": "#fff8f6", "primary-fixed-dim": "#ffb3b2", "secondary-fixed": "#ffdad9", "inverse-primary": "#ffb3b2", "outline": "#8b7170", "surface-dim": "#e4d7d4", "on-primary": "#ffffff", "secondary": "#9d4043", "surface-container-high": "#f2e6e2", "primary": "#6e0416", "on-error": "#ffffff", "on-tertiary-container": "#ffa399", "on-secondary": "#ffffff", "inverse-surface": "#362f2d", "tertiary-fixed": "#ffdad6", "tertiary": "#700007", "outline-variant": "#debfbe", "surface-variant": "#ece0dc", "surface-tint": "#a9343c", "inverse-on-surface": "#fbeeea", "primary-container": "#8e202a", "surface-container-highest": "#ece0dc", "error-container": "#ffdad6", "secondary-container": "#ff8d8e", "on-secondary-fixed": "#410008", "surface-container": "#f8ebe7", "surface-bright": "#fff8f6", "on-primary-fixed-variant": "#891c27", "on-error-container": "#93000a", "on-surface": "#201a18", "primary-fixed": "#ffdad9" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "3rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem" }, fontFamily: { "label-lg": ["\"Noto Sans, Noto Sans Thai, system-ui, sans-serif\""], "display-lg": ["\"Be Vietnam Pro, LINE Seed Sans TH, sans-serif\""], "label-md": ["\"Noto Sans, Noto Sans Thai, system-ui, sans-serif\""], "body-sm": ["\"Noto Sans, Noto Sans Thai, system-ui, sans-serif\""], "headline-lg": ["\"Be Vietnam Pro, LINE Seed Sans TH, sans-serif\""], "headline-md": ["\"Be Vietnam Pro, LINE Seed Sans TH, sans-serif\""], "label-sm": ["\"Noto Sans, Noto Sans Thai, system-ui, sans-serif\""], "body-md": ["\"Noto Sans, Noto Sans Thai, system-ui, sans-serif\""], "headline-lg-mobile": ["\"Be Vietnam Pro, LINE Seed Sans TH, sans-serif\""], "headline-sm": ["\"Be Vietnam Pro, LINE Seed Sans TH, sans-serif\""], "body-lg": ["\"Noto Sans, Noto Sans Thai, system-ui, sans-serif\""], "title-md": ["\"Be Vietnam Pro, LINE Seed Sans TH, sans-serif\""], "display-lg-mobile": ["\"Be Vietnam Pro, LINE Seed Sans TH, sans-serif\""] }, fontSize: { "label-lg": ["0.9375rem", { lineHeight: "1.25rem", letterSpacing: "0.01em", fontWeight: "600" }], "display-lg": ["3.5rem", { lineHeight: "4.25rem", letterSpacing: "-0.03em", fontWeight: "700" }], "label-md": ["0.8125rem", { lineHeight: "1.125rem", fontWeight: "500" }], "body-sm": ["0.875rem", { lineHeight: "1.375rem", fontWeight: "400" }], "headline-lg": ["2.25rem", { lineHeight: "2.75rem", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["1.5rem", { lineHeight: "2rem", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.04em", fontWeight: "600" }], "body-md": ["1rem", { lineHeight: "1.625rem", fontWeight: "400" }], "headline-lg-mobile": ["1.75rem", { lineHeight: "2.25rem", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-sm": ["1.25rem", { lineHeight: "1.75rem", fontWeight: "600" }], "body-lg": ["1.125rem", { lineHeight: "1.75rem", fontWeight: "400" }], "title-md": ["1.125rem", { lineHeight: "1.5rem", fontWeight: "600" }], "display-lg-mobile": ["2.25rem", { lineHeight: "2.75rem", letterSpacing: "-0.02em", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe" style="background: linear-gradient(rgba(15, 8, 8, 0.72) 0%, rgba(15, 8, 8, 0.45) 100%); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.15);"><div class="min-h-[5rem] py-4 md:py-5 px-gutter-mobile md:px-margin flex items-center justify-between gap-space-md max-w-7xl mx-auto"><div class="flex items-center gap-space-md"><button aria-label="เมนูหลัก" class="w-12 h-12 flex items-center justify-center rounded-full text-white hover:bg-white/10 transition-colors md:hidden" type="button"><span class="material-symbols-outlined text-[28px]">menu</span></button><a class="flex items-center gap-3 py-1" data-path="home" href="#"><div class="rounded-full overflow-hidden flex items-center justify-center bg-surface-container-low shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style="width: 64px; height: 64px; flex-shrink: 0;"><img alt="เจริญแหนมเนือง โลโก้" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC60dB6IfDXwcsTagIUZKTuu-nxc2Aw_u_4fehbJgrPoQe5utPPIk10JvByi2q0FHp79LNrN9Rv39YiuVf8L6XEhpDZRdlsdzWVdlhm-8GrxHyEw25j5Vq266J7Liv37oaDISmNxbbu_uVbJZ4Kks14uCUY4fuBgMZ3MC2-a6EYtivfN_ehvKC3-wHoMUpGPviekcrfTeIzOzM67oT3kaBI8_D9bcZRZNaekKvcr3Ep8KqMusPv4uNwIihBRR0UTf2L_3U"/></div><span class="font-headline-md text-headline-sm md:text-headline-md text-white tracking-tight font-bold hidden sm:inline-block">เจริญแหนมเนือง</span></a></div><nav class="hidden md:flex items-center gap-space-lg"><a class="font-label-lg text-label-lg text-white/80 hover:text-white transition-colors py-2 px-2" data-path="home" href="#">หน้าแรก</a><a class="font-label-lg text-label-lg text-white/80 hover:text-white transition-colors py-2 px-2" data-path="menu" href="#menu">เมนู</a><a class="font-label-lg text-label-lg text-white/80 hover:text-white transition-colors py-2 px-2" data-path="branches" href="#branches">สาขา</a><a class="font-label-lg text-label-lg text-white/80 hover:text-white transition-colors py-2 px-2" data-path="wholesale" href="#wholesale">ขายส่งวัตถุดิบ</a><a class="font-label-lg text-label-lg text-white/80 hover:text-white transition-colors py-2 px-2" data-path="catering-booth" href="#booth">ออกบูธ</a><a class="font-label-lg text-label-lg text-white/80 hover:text-white transition-colors py-2 px-2" data-path="about-us" href="#about">เกี่ยวกับเรา</a><a class="font-label-lg text-label-lg text-white/80 hover:text-white transition-colors py-2 px-2" data-path="contact" href="#contact">ติดต่อเรา</a></nav><div class="flex items-center gap-space-xs"><a class="open-line-modal inline-flex items-center justify-center gap-2 h-12 px-space-lg text-white font-label-lg text-label-lg rounded-full shadow-[0_4px_16px_rgba(217,4,41,0.4)] transition-all active:scale-95" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41);" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span class="whitespace-nowrap font-semibold">สั่งเลย / สอบถาม</span></a></div></div></header><main class="flex flex-col relative w-full pb-28 md:pb-16 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden text-white pt-28 md:pt-36 pb-14 md:pb-20" style="background-color: rgb(26, 14, 15);"><div class="absolute inset-0 z-0"><img alt="เจริญแหนมเนือง สดใหม่พร้อมทาน" class="w-full h-full object-cover object-center scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsffep9-9T6SBB66uS0PnGiY11SuYkahSp4tj3L8CJYQfKEIXNoUqjDLDjcETzFSPIZrTRxE-HnaJ1vc4BgWkAUwfvEb9Zc2zaieizB8EhXZwe7AhH0x6RVgVN1TNa5XUyZkxNV6cdgvzDHIu4YyjBNnyUo7bi_wab5h_PlFG-b4-KCei6BbUvdfUDLJdfKlmawXzkOWcXxv8RyyUVh8ls8qd_VOthN8Sv_sOq-BkRZ7tD7EH5jYhVFYYIKhyapcVnC20"/><div class="absolute inset-0 bg-gradient-to-r from-[#120507]/90 via-[#180709]/65 to-black/30"></div><div class="absolute inset-0 bg-gradient-to-t from-[#140608]/90 via-transparent to-black/40"></div></div><div class="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin flex flex-col gap-10 md:gap-12"><div class="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12"><div class="flex-1 flex flex-col items-start gap-4 text-left max-w-2xl"><div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/20 text-white font-label-sm text-label-sm shadow-sm"><span class="w-2.5 h-2.5 rounded-full animate-pulse" style="background-color: #d90429;"></span><span class="tracking-wide text-white font-semibold drop-shadow-sm">สดใหม่ พิถีพิถันทุกคำจากเตา • สะอาด ปลอดภัย</span></div><h1 class="text-white font-bold tracking-tight text-[38px] sm:text-[48px] md:text-[56px] lg:text-[64px] leading-[1.15] drop-shadow-lg" style="font-family: 'Prompt', 'Kanit', sans-serif !important; font-weight: 900 !important;">เจริญแหนมเนือง</h1><p class="font-body-md text-[17px] md:text-[20px] text-white/95 max-w-2xl leading-relaxed drop-shadow-md">อาหารเวียดนาม รสเด็ด วัตถุดิบคุณภาพ พร้อมเสิร์ฟทุกวัน แหนมเนืองสูตรต้นตำรับกลิ่นหอมกรุ่น เสิร์ฟคู่ผักสดสะอาดและน้ำจิ้มรสเด็ดเข้มข้น จัดเต็มความอร่อยทุกชุด</p><div class="flex flex-wrap items-center gap-3 pt-2 w-full sm:w-auto"><a class="open-line-modal flex-1 sm:flex-none inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full text-white font-label-lg text-label-lg active:scale-95 transition-all shadow-xl font-bold" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: #d90429; box-shadow: 0 6px 24px rgba(217, 4, 41, 0.5);" target="_blank"><span class="w-6 h-6 rounded-full bg-white/25 flex items-center justify-center"><span class="material-symbols-outlined text-[17px] text-white">chat</span></span><span class="">สั่งเลย / สอบถาม LINE : @sai292SOFKM</span></a><a class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white/20 hover:bg-white/30 text-white font-label-lg text-label-lg backdrop-blur-md border border-white/25 active:scale-95 transition-all font-semibold shadow-lg" href="#menu"><span class="material-symbols-outlined text-[20px] text-white">restaurant_menu</span><span class="">ดูเมนูของเรา</span><span class="material-symbols-outlined text-[18px] text-white/80">arrow_forward</span></a></div></div><div class="w-full lg:w-[420px] flex-shrink-0 flex justify-center"><div class="relative w-full max-w-[380px] rounded-2xl overflow-hidden shadow-2xl border border-white/30 bg-white/10 backdrop-blur-md p-3"><div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden"><img alt="แหนมเนืองโรลสูตรต้นตำรับ" class="w-full h-full object-contain hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQBhERZ8Gdt-OHMCBtqH7xjx_0KRWUcFbQBjYWCYMywRrkThn8A7hxMjnay89KFwJmEtBkdaRaJNDPNcQ_dvV8u17x8kM7cYm-JLE41lFssc3dQwg5-IUebkJ4dSIXnrzfYAPntnTLDH5CFGslOTXzhdzt91VqEr5n3-F1lUPSORXDg9aHMBtzaXaWvBUQqL8KWg-P4VN_z3xmvBirtxYcElpN94tTx9HbpXL29OlcXMMzu05TfLWyLpJEfnBnHMJzyvuEW-tB4WhQMp0"/></div><div class="mt-3 flex items-center justify-between text-white px-1"><span class="font-label-md text-label-sm sm:text-label-md px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/15">โรลพอดีคำ พร้อมทานทันที</span><div class="flex items-center gap-1 text-xs text-white bg-red-600/90 px-2.5 py-1 rounded-full font-semibold"><span class="material-symbols-outlined text-[14px]">verified</span>สูตรต้นตำรับ</div></div></div></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-4"><div class="flex items-center gap-3.5 p-4 rounded-xl bg-black/40 hover:bg-black/55 backdrop-blur-md border border-white/15 transition-all shadow-lg"><div class="w-11 h-11 rounded-xl flex items-center justify-center text-white flex-shrink-0 shadow-md" style="background-color: #d90429;"><span class="material-symbols-outlined text-[22px]">takeout_dining</span></div><div class="min-w-0"><p class="font-label-md text-[15px] text-white font-bold truncate">แหนมเนืองพร้อมทาน</p><p class="font-body-sm text-[13px] text-white/85 truncate">สั่งกลับบ้าน สะดวก อร่อย ทันที</p></div></div><div class="flex items-center gap-3.5 p-4 rounded-xl bg-black/40 hover:bg-black/55 backdrop-blur-md border border-white/15 transition-all shadow-lg"><div class="w-11 h-11 rounded-xl flex items-center justify-center text-white flex-shrink-0 shadow-md" style="background-color: #d90429;"><span class="material-symbols-outlined text-[22px]">inventory_2</span></div><div class="min-w-0"><p class="font-label-md text-[15px] text-white font-bold truncate">ขายส่งวัตถุดิบ</p><p class="font-body-sm text-[13px] text-white/85 truncate">สำหรับนำไปขาย • สอนฟรี</p></div></div><div class="flex items-center gap-3.5 p-4 rounded-xl bg-black/40 hover:bg-black/55 backdrop-blur-md border border-white/15 transition-all shadow-lg"><div class="w-11 h-11 rounded-xl flex items-center justify-center text-white flex-shrink-0 shadow-md" style="background-color: #d90429;"><span class="material-symbols-outlined text-[22px]">storefront</span></div><div class="min-w-0"><p class="font-label-md text-[15px] text-white font-bold truncate">รับออกบูธ</p><p class="font-body-sm text-[13px] text-white/85 truncate">งานอีเวนต์ งานจัดเลี้ยง ตลาดนัด</p></div></div><div class="flex items-center gap-3.5 p-4 rounded-xl bg-black/40 hover:bg-black/55 backdrop-blur-md border border-white/15 transition-all shadow-lg"><div class="w-11 h-11 rounded-xl flex items-center justify-center text-white flex-shrink-0 shadow-md" style="background-color: #d90429;"><span class="material-symbols-outlined text-[22px]">pin_drop</span></div><div class="min-w-0"><p class="font-label-md text-[15px] text-white font-bold truncate">4 สาขาพร้อมบริการ</p><p class="font-body-sm text-[13px] text-white/85 truncate">กรุงเทพฯ • เรวดี • บางแสน</p></div></div></div></div></section>
+<!-- MENU SECTION -->
+<section class="w-full px-margin-mobile md:px-margin py-8 md:py-12 bg-surface-container-low"><div class="max-w-7xl mx-auto rounded-2xl bg-gradient-to-r from-[#6e0416] via-[#8e202a] to-[#ba1a1a] text-white p-space-md md:p-space-xl shadow-xl overflow-hidden relative"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg relative z-10"><div class="flex-1 flex flex-col items-start gap-space-sm text-left"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/25 text-white font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px] text-yellow-300">star</span><span class="">เมนูยอดนิยม • ซิกเนเจอร์ประจำร้าน</span></div><h2 class="text-[28px] md:text-[38px] font-bold tracking-tight text-white leading-tight" style="font-family: 'Prompt', 'Kanit', sans-serif !important; font-weight: 800 !important;">แหนมเนืองโรล แป้งนุ่ม ผักสดคำโต</h2><p class="font-body-md text-body-md text-white/90 max-w-xl leading-relaxed">พร้อมเสิร์ฟรสชาติต้นตำรับในรูปแบบโรลพอดีคำ ม้วนสดใหม่แน่นๆ ทุกชิ้น พร้อมผักสดปลอดสารและน้ำจิ้มสูตรเด็ดเข้มข้น อร่อยฟินทันที ไม่ต้องห่อเอง สะดวก อิ่มอร่อยได้ทุกที่</p><div class="flex flex-wrap items-center gap-3 pt-2 w-full sm:w-auto"><a class="open-line-modal w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-white text-primary hover:bg-surface-container-lowest font-label-lg text-label-lg font-bold shadow-lg active:scale-95 transition-all" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] text-primary">shopping_cart</span><span class="">สั่งแหนมเนืองโรลทันที</span></a><a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-md py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-label-lg text-label-lg border border-white/20 active:scale-95 transition-all" href="tel:0623314304"><span class="material-symbols-outlined text-[20px]">call</span><span class="">062-331-4304</span></a></div></div><div class="w-full sm:w-72 md:w-80 flex-shrink-0 flex justify-center"><div class="relative w-full max-w-[280px] rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30 bg-black/20"><img alt="เจริญแหนมเนือง แหนมเนืองโรล อาหารเวียดนาม เมนูซิกเนเจอร์" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA52I07D8Wmtl3DC5X02C0PXMCe1dSoHKG3U4-yqqXajMews3cw-FsnC-u5WRXd--4n-EMIOmDVXillWbUWOV-11usu6d7QzZBuv3RMIai1816M7i2OKY8ez7LbN0W41yk-l-n2iR6F7hmnUtPl3u9ywfy3dNiFASjLJBd4sRCEzxiHu_SvzUQdxpfXAwGUumNyvo7EVkwV8tsRW__SlJjhpcb_wHFI3SovOLhB7oJh6kRJHWoSK2DdLPZj2zgRbp6L2eI"/></div></div></div></div></section><section class="w-full px-margin-mobile md:px-margin py-12 scroll-mt-20" id="menu">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Our Selections</span>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface font-bold">เมนูแนะนำ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">แหนมเนืองคุณภาพ หมูสดใหม่ พร้อมผักและน้ำจิ้ม</p>
 </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container-low">
+<img alt="แหนมเนืองโรลพร้อมทาน" class="w-full h-full object-contain p-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyj-8BahFSty2Iyu3eLPjuBTGbyHkLUhWQ6Nef0Jz-yf3Obhv_i9ubi2R20xM5ztC41ONn_P-k3b9L5pLF4NG9DWR3BY9-VnmPcemn7LYrjDkoLAnZA9StL6rnuQMTbqdwTBpj_yBhYnzlr2UTmFwIimzsPykdRp_l-1IKailak9aP11kzlFWyf1d5sOky8Pq3XA1zxAo5uJCjOJ4mnBfEMp77XB-tgrzfEwMCL1J_UmEtra_t1QahhGlaxEJ2JLF_DMSKSRayvUSv768"/>
 </div>
-</header>
-<!-- END: MainHeader -->
-<!-- BEGIN: HeroSection -->
-<section class="relative w-full h-[580px] sm:h-[620px] lg:h-[680px] overflow-hidden bg-black" data-purpose="hero-banner" id="home">
-<!-- Hero Background Image (Appetizing Vietnamese Spring Rolls Close-up) -->
-<img alt="เจริญแหนมเนือง อาหารเวียดนามพรีเมียม" class="absolute inset-0 w-full h-full object-cover object-center scale-105 filter brightness-90 transform hover:scale-100 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP3913Yr_BFEQEZOz7SCd9VfKTQKCaBWqWSZneUtn9quRZI_V4M6u63OmznjX26d3v8Gxnr4E6_gewDN7JS75OfTUQHwvZOsM7OtesoThw46FDVu6ph5CYymJaRGTpVXCfDVedGpbSK7vwmMxijVMEq3tFGdaCE3m8T3vb_K7x96sXRL6O55-cTW6Z5zaW6ZF42uzhwEplbfItVbGa_PfGWfM3zUB6FuV9HS8IcnofnYMba_cVFGm6qG_sHuDzIhrFkx7qdSqB-GxMkRo">
-<!-- Gradient Overlay for Legibility -->
-<div class="absolute inset-0 hero-gradient-overlay"></div>
-<!-- Hero Content -->
-<div class="relative max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
-<div class="max-w-xl text-white">
-<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight drop-shadow-md">
-          เจริญ<br>แหนมเนือง
-        </h1>
-<p class="mt-4 text-lg sm:text-xl text-gray-200 font-light leading-relaxed drop-shadow">
-          อาหารเวียดนาม สดใหม่ วัตถุดิบคุณภาพ<br class="hidden sm:inline">
-          พร้อมเสิร์ฟทุกวัน สูตรต้นตำรับแท้
-        </p>
-<!-- Action Buttons -->
-<div class="mt-8 flex flex-wrap items-center gap-4">
-<!-- Primary CTA Button -->
-<a class="inline-flex items-center gap-2.5 px-6 py-3.5 bg-brand-red hover:bg-brand-redHover text-white text-base font-medium rounded-full shadow-lg hover:shadow-red-900/40 transition duration-200 transform hover:-translate-y-0.5" href="https://line.me" rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-line text-xl"></i>
-<span class="">สั่งเลย / สอบถาม</span>
-</a>
-<!-- Secondary CTA Button -->
-<a class="inline-flex items-center gap-2 px-6 py-3.5 bg-black/40 hover:bg-black/60 text-white text-base font-normal rounded-full border border-white/50 backdrop-blur-sm transition duration-200 hover:border-white" href="#menu">
-<span class="">ดูเมนูของเรา</span>
-<i class="fa-solid fa-chevron-right text-xs"></i>
-</a>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">แหนมเนืองโรลพร้อมทาน</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                แหนมเนืองม้วนพอดีคำ ผักสดกรอบและเครื่องเคียงครบครัน ทานง่ายสะดวกทุกที่
+              </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ราคาจำหน่าย</span>
+<span class="font-title-md text-title-md text-primary font-bold">สอบถามราคา</span>
+</div>
+<a class="open-line-modal px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container active:scale-95 transition-all" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 14px;" target="_blank">
+                สอบถาม / สั่งซื้อ
+              </a>
 </div>
 </div>
 </div>
-</section>
-<!-- END: HeroSection -->
-<!-- BEGIN: FeatureBar -->
-<section class="border-b border-gray-100 bg-white" data-purpose="features-summary">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 divide-x-0 md:divide-x divide-gray-100">
-<!-- Feature 1 -->
-<div class="flex items-center gap-4 justify-start md:justify-center px-2">
-<div class="w-12 h-12 rounded-full bg-red-50 text-brand-red flex items-center justify-center shrink-0">
-<i class="fa-solid fa-leaf text-xl"></i>
+<!-- Card 2 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container-low">
+<img alt="ชุดแหนมเนือง ชุดใหญ่" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-dtmP5kjzTvjqNtFVDZ6dMcCuJoaYuMuVh5o-FFvN_jUVcfAbgDd-DT_x2JADkx43uUpbduRr8RLoSkUxMd-Wf3O64mQvIxBlPYN6FFmNpVD3HlBZHYdgzkjQF53AI9ub34icYh7NOBiuf3pAneFfSZ7KgM3OObAP03_WHeupAwX_yFYfUCw6FGhF2l4-9-FiK1D9b_s4y1bQ9klgVnNHstE0i4v-WD3Xk-W4t7wi4SWr7uWQ6-pBzek1NTxjENI_GkuD3cDrI9kgAsE"/>
 </div>
-<div>
-<h4 class="font-bold text-gray-900 text-base leading-snug">แหนมเนือง</h4>
-<p class="text-xs text-gray-500 font-light">พร้อมทาน สดสะอาด</p>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">ชุดแหนมเนือง (ชุดใหญ่)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                ชุดแหนมเนืองจัดเต็ม หมูย่างสูตรต้นตำรับ แผ่นแป้ง ผักสดปลอดสาร และน้ำจิ้มตับปรุงรสเข้มข้น
+              </p>
 </div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ราคาจำหน่าย</span>
+<span class="font-title-md text-title-md text-primary font-bold">สอบถามราคา</span>
 </div>
-<!-- Feature 2 -->
-<div class="flex items-center gap-4 justify-start md:justify-center px-2">
-<div class="w-12 h-12 rounded-full bg-red-50 text-brand-red flex items-center justify-center shrink-0">
-<i class="fa-solid fa-box-open text-xl"></i>
-</div>
-<div>
-<h4 class="font-bold text-gray-900 text-base leading-snug">ขายส่งวัตถุดิบ</h4>
-<p class="text-xs text-gray-500 font-light">สำหรับนำไปขายต่อ</p>
-</div>
-</div>
-<!-- Feature 3 -->
-<div class="flex items-center gap-4 justify-start md:justify-center px-2">
-<div class="w-12 h-12 rounded-full bg-red-50 text-brand-red flex items-center justify-center shrink-0">
-<i class="fa-solid fa-store text-xl"></i>
-</div>
-<div>
-<h4 class="font-bold text-gray-900 text-base leading-snug">รับออกบูธ</h4>
-<p class="text-xs text-gray-500 font-light">งานอีเวนต์ งานตลาด</p>
-</div>
-</div>
-<!-- Feature 4 -->
-<div class="flex items-center gap-4 justify-start md:justify-center px-2">
-<div class="w-12 h-12 rounded-full bg-red-50 text-brand-red flex items-center justify-center shrink-0">
-<i class="fa-solid fa-location-dot text-xl"></i>
-</div>
-<div>
-<h4 class="font-bold text-gray-900 text-base leading-snug">4 สาขา</h4>
-<p class="text-xs text-gray-500 font-light">ในกรุงเทพฯ และต่างจังหวัด</p>
+<a class="open-line-modal px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container active:scale-95 transition-all" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 14px;" target="_blank">
+                สอบถาม / สั่งซื้อ
+              </a>
 </div>
 </div>
 </div>
+<!-- Card 3 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container-low"><img alt="ชุดพร้อมทาน เดลิเวอรี่" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFFgGeb_rUtKL6Xatv5hqdLOB7Qp9WuoM-XkvTW-ofuct69fGy8H2b0hDVGArmQqPHjkOBMh_gSLiSjBqTAYPFQuFk-_E4FXXAIREwtDrBAbhmfb8ttpOIx6XYLpfQPbKu3H166PmPAwZWz4u_qA5O7K0nNdiWsp7T5Dq1FSdS9i2yC6ebKwQ-sSNvgcVO5b7TlDrlPysiL4DFv766oaetNIRI0WL2wI0CdhxySA229-QkNU8FL60eoi5fiVykkO_2LhD-O8Qh9qQ_Lvs"/></div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">ชุดพร้อมทาน (DIY Set)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                ชุดแหนมเนืองพร้อมเสิร์ฟสำหรับปาร์ตี้หรือครอบครัว แกะกล่องทานได้ทันที
+              </p>
 </div>
-</section>
-<!-- END: FeatureBar -->
-<!-- BEGIN: RecommendedMenu -->
-<section class="py-16 bg-[#faf9f6]" data-purpose="popular-menu" id="menu">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<!-- Section Header -->
-<div class="text-center max-w-2xl mx-auto mb-12">
-<h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">เมนูแนะนำ</h2>
-<p class="mt-2 text-base text-gray-600 font-light">แหนมเนืองคุณภาพ หมูสดใหม่ พร้อมผักสดสะอาดและน้ำจิ้มสูตรเด็ด</p>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ราคาจำหน่าย</span>
+<span class="font-title-md text-title-md text-primary font-bold">สอบถามราคา</span>
 </div>
-<!-- Menu Grid Cards -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Menu Card 1 -->
-<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
-<div class="h-60 overflow-hidden relative">
-<img alt="แหนมเนืองโรล" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvsHOBVaipL2Y0rxPSzE9o3CO8WYvtGe0QYoqXlXUrA5c0jP6ksyy1Y1NshONWCPpj-5vagPFUBu8vqgU1SLgMZuYp--zvGDb8bYSG7fKqXx5IfqjandU9m8AA9B3HV8CLZG7MEOI-qj--VdoDhRKkTBj0ITs6-KRa582-3wJfRC_ZpBvxDp5yY99NaYikbwi3IrtAhLFkZLxNrVN-WJUCMArzMeX3ZMk4JNBnO8IGV_1_j05NKFPCpgtSlR__jdieK5zx_tsCRUUwQSs">
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold text-gray-900">แหนมเนืองโรล</h3>
-<p class="text-sm text-gray-500 mt-1">หอม นุ่ม อร่อย พร้อมทานทันที</p>
-</div>
-<div class="mt-6 flex justify-end">
-<a class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-brand-red bg-white border border-brand-red rounded-full hover:bg-brand-red hover:text-white transition duration-200" href="https://line.me" rel="noopener noreferrer" target="_blank">
-<span class="">สอบถามราคา</span>
-<i class="fa-solid fa-chevron-right text-[10px]"></i>
-</a>
-</div>
-</div>
-</div>
-<!-- Menu Card 2 -->
-<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
-<div class="h-60 overflow-hidden relative">
-<img alt="ชุดแหนมเนือง" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkVVIunpxf4E9e1XDY0LM5CruC1y7yWn1bNjjtvABV_EZK9RRySk0nA5DOlp4ms135HdBRoRF9a89FCyfD8mqF5KOErVfqEqwJepwfcl5SDOylJFomFvmcpmfzzyu3jR2o1AyUNi2ir0G8x12h_VEZKafUM0BlIsTHIiQK1mgXRttY4qhDB__mugnVTpLquBRrXuZX489zCQ1igBbimZxzkCDcxMfJUdJ6XhFwLlL0_dBW6L9XPg93e_NvGs78eqH7kvBWPW7x0eLwmtc">
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold text-gray-900">ชุดแหนมเนือง</h3>
-<p class="text-sm text-gray-500 mt-1">ครบชุด ผักสด แป้ง น้ำจิ้ม พร้อมทาน</p>
-</div>
-<div class="mt-6 flex justify-end">
-<a class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-brand-red bg-white border border-brand-red rounded-full hover:bg-brand-red hover:text-white transition duration-200" href="https://line.me" rel="noopener noreferrer" target="_blank">
-<span class="">สอบถามราคา</span>
-<i class="fa-solid fa-chevron-right text-[10px]"></i>
-</a>
-</div>
-</div>
-</div>
-<!-- Menu Card 3 -->
-<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col group">
-<div class="h-60 overflow-hidden relative">
-<img alt="ชุดพร้อมทาน" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSe_5WYIm9zTg8fnDRiukrDvCprP8mVFOzltzSm2RJz39X4zSC9d6l38iR37dSoaoML7hRLOjc2Mqa3FRH9Rtzy9M3ERjATnt1VS4BseV3CKaDc_L4iu4qKm-ZlIMdcJEXXW5gN4YXM8EgCsfQCDn8i-DPHsbnPRNPrJsdBWgMD8iOLS_sRbvBV0f12Mu4jtlPcs4l3_Tau3jqd6V9TgqWigp1xGhpfLGRBvyw5fC1pm9u7vM6zEkPShCJuMPuezntEMbdwytHN0skOZU">
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold text-gray-900">ชุดพร้อมทาน</h3>
-<p class="text-sm text-gray-500 mt-1">สะดวก อร่อยได้ทุกที่ พกพาง่าย</p>
-</div>
-<div class="mt-6 flex justify-end">
-<a class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-brand-red bg-white border border-brand-red rounded-full hover:bg-brand-red hover:text-white transition duration-200" href="https://line.me" rel="noopener noreferrer" target="_blank">
-<span class="">สอบถามราคา</span>
-<i class="fa-solid fa-chevron-right text-[10px]"></i>
-</a>
+<a class="open-line-modal px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container active:scale-95 transition-all" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 14px;" target="_blank">
+                สอบถาม / สั่งซื้อ
+              </a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- END: RecommendedMenu -->
-<!-- BEGIN: BranchesSection -->
-<section class="py-16 bg-brand-maroon text-white" data-purpose="branches-container" id="branches">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<!-- Branches Header -->
-<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-10 pb-6 border-b border-red-900/40">
-<div class="flex items-center gap-3">
-<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<i class="fa-solid fa-location-dot text-2xl text-red-300"></i>
+<!-- BRANCH SECTION -->
+<section class="w-full px-margin-mobile md:px-margin py-12 scroll-mt-20 bg-surface-container-low" id="branches"><div class="max-w-7xl mx-auto flex flex-col gap-space-lg"><div class="flex flex-col gap-3 text-center items-center mb-2"><div class="inline-flex items-center gap-2.5 px-6 py-2 rounded-full bg-primary-container text-on-primary font-bold shadow-md" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.35) 0px 4px 16px;"><span class="w-3 h-3 rounded-full bg-surface animate-pulse flex-shrink-0"></span><span class="text-[18px] md:text-[20px] font-bold tracking-normal">4 สาขา • ใกล้คุณ</span><span class="px-3 py-0.5 rounded-full bg-on-primary/20 text-on-primary text-[16px] font-semibold ml-0.5">เปิดทุกวัน</span></div><h2 class="text-[32px] md:text-[42px] font-bold text-on-surface tracking-tight leading-tight mt-1" style="font-weight: 900 !important;">สาขาของเรา</h2><p class="text-[18px] md:text-[20px] text-on-surface-variant font-medium">ทานที่ร้าน • รับกลับบ้าน • สั่ง Delivery ได้เลย</p></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md"><div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between gap-space-md border-t-0"><div class="flex flex-col gap-3"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="font-label-sm text-label-sm font-bold uppercase">กรุงเทพฯ</span></div><span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">เปิดทุกวัน</span></div><div><h3 class="font-title-md text-title-md text-on-surface font-bold">สาขาห้วยขวาง</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ซอยหอนาฬิกาห้วยขวาง สนามกีฬาห้วยขวาง</p></div><div class="flex flex-col gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">schedule</span><span class="">10:00 – 22:00 น.</span></div><a class="flex items-center gap-1.5 text-primary hover:underline font-semibold" href="tel:0838917412"><span class="material-symbols-outlined text-[18px]">call</span><span class="">083-891-7412</span></a></div></div><div class="flex flex-col gap-2 pt-2"><a class="w-full py-2.5 text-center rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://maps.app.goo.gl/5hG4tVnokmLZfezx7" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-primary">map</span><span class="">ดูแผนที่ →</span></a><a class="open-line-modal w-full py-2.5 text-center rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 12px;" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="">สั่ง / สอบถามสาขา</span></a></div></div><div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between gap-space-md border-t-0"><div class="flex flex-col gap-3"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="font-label-sm text-label-sm font-bold uppercase">กรุงเทพฯ</span></div><span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">เปิดทุกวัน</span></div><div><h3 class="font-title-md text-title-md text-on-surface font-bold">สาขาคู้บอน ซอย 1</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">เข้าซอยคู้บอน 1 ประมาณ 10 เมตร ร้านอยู่ซ้ายมือ</p></div><div class="flex flex-col gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">schedule</span><span class="">10:00 – 21:00 น.</span></div><a class="flex items-center gap-1.5 text-primary hover:underline font-semibold" href="tel:0815615421"><span class="material-symbols-outlined text-[18px]">call</span><span class="">081-561-5421</span></a></div></div><div class="flex flex-col gap-2 pt-2"><a class="w-full py-2.5 text-center rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://maps.app.goo.gl/ez9bjx72M94R6sr76" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-primary">map</span><span class="">ดูแผนที่ →</span></a><a class="open-line-modal w-full py-2.5 text-center rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 12px;" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="">สั่ง / สอบถามสาขา</span></a></div></div><div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between gap-space-md border-t-0"><div class="flex flex-col gap-3"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="font-label-sm text-label-sm font-bold uppercase">นนทบุรี</span></div><span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">เปิดทุกวัน</span></div><div><h3 class="font-title-md text-title-md text-on-surface font-bold">สาขาเรวดี นนทบุรี</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ตลาดใหม่เรวดี ข้าง DIY</p></div><div class="flex flex-col gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">schedule</span><span class="">10:00 – 21:00 น.</span></div><a class="flex items-center gap-1.5 text-primary hover:underline font-semibold" href="tel:0909701991"><span class="material-symbols-outlined text-[18px]">call</span><span class="">090-970-1991</span></a></div></div><div class="flex flex-col gap-2 pt-2"><a class="w-full py-2.5 text-center rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://maps.app.goo.gl/m7iyKBcxdn7KHbFb7?g_st=ic" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-primary">map</span><span class="">ดูแผนที่ →</span></a><a class="open-line-modal w-full py-2.5 text-center rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 12px;" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="">สั่ง / สอบถามสาขา</span></a></div></div><div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm justify-between gap-space-md border-t-0"><div class="flex flex-col gap-3"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="font-label-sm text-label-sm font-bold uppercase">ชลบุรี</span></div><span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold animate-pulse" style="background-color: rgb(217, 4, 41);">สาขาใหม่</span></div><div><h3 class="font-title-md text-title-md text-on-surface font-bold">สาขาบางแสน</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ซอยลีลา ถนนบางแสนสาย 4 ใต้ ติดอพาร์ตเมนต์เต็มทรัพย์</p></div><div class="flex flex-col gap-1.5 pt-1 text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">schedule</span><span class="">10:00 – 20:00 น.</span></div><a class="flex items-center gap-1.5 text-primary hover:underline font-semibold" href="tel:0996142259"><span class="material-symbols-outlined text-[18px]">call</span><span class="">099-614-2259</span></a></div></div><div class="flex flex-col gap-2 pt-2"><a class="w-full py-2.5 text-center rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://maps.app.goo.gl/y2aLaMAkMX2ZSzxBA?g_st=ic" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px] text-primary">map</span><span class="">ดูแผนที่ →</span></a><a class="open-line-modal w-full py-2.5 text-center rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center gap-1" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 12px;" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="">สั่ง / สอบถามสาขา</span></a></div></div></div><div class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-space-sm pt-4"><div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm"><span class="material-symbols-outlined text-primary text-[18px]">local_parking</span><span class="">ทุกสาขามีที่จอดรถ • นั่งทานได้</span></div><div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm"><span class="material-symbols-outlined text-primary text-[18px]">delivery_dining</span><span class="">ส่งผ่าน LINE MAN • Grab • ShopeeFood หรือสั่งล่วงหน้ารับที่ร้าน</span></div><a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm hover:bg-primary-container transition-all" href="tel:0623314304" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.25) 0px 4px 12px;"><span class="material-symbols-outlined text-[18px]">stars</span><span class="">สาขาใหม่ บางแสน เปิดแล้ว! ใกล้ ม.บูรพา • โทร 062-331-4304</span></a></div></div></section>
+<!-- WHOLESALE SECTION -->
+<section class="w-full px-margin-mobile md:px-margin py-12 scroll-mt-20" id="wholesale">
+<div class="max-w-7xl mx-auto rounded-xl bg-surface-container p-space-md md:p-space-xl flex flex-col lg:flex-row items-center gap-space-xl">
+<div class="flex-1 flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold" style="background-color: rgb(217, 4, 41);">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span class="">สนใจนำไปขาย • เรียนฟรี ไม่มีค่าใช้จ่าย</span>
 </div>
-<div>
-<h2 class="text-2xl sm:text-3xl font-bold tracking-tight">สาขาของเรา</h2>
-<p class="text-sm text-red-200/90 font-light mt-0.5">แวะมาที่ร้าน หรือสั่งเดลิเวอรีได้ทุกสาขา</p>
-</div>
-</div>
-<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/40 text-xs sm:text-sm font-medium hover:bg-white hover:text-brand-maroon transition duration-200" href="#contact">
-<span class="">ดูทุกสาขา</span>
-<i class="fa-solid fa-chevron-right text-xs"></i>
-</a>
-</div>
-<!-- Branches 4 Cards Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Branch 1 -->
-<div class="bg-white rounded-xl overflow-hidden text-gray-900 shadow-lg flex flex-col justify-between">
-<div>
-<div class="h-36 overflow-hidden relative">
-<img alt="สาขาคู้บอน ซอย 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNGD-nDoFpndXqympWAFeW1cxdl8dmO9dw9-6ElJj8m1nTcRZbEuyKBbr_XtZb8wQ41DiKB7tWJ3zkopFYKbektYwQFbe-vgASGI2c-Fll0K8hjH7NgtuVwL6y-a0Tb715oPmcpTZjQ-d3Pik9V9BGcPCzSjF058OBP4mYFsko073kDjRJiRPJJuKe1rfJOOAPnFZCvm2vfp4cv_4eZm2V_wNHPaJvgdwE6NrcNTclCbFcQlVeLbZn408YaZr0KwAB6arSYm16mwMpevU">
-<span class="absolute top-2 left-2 px-2.5 py-1 bg-brand-maroon/80 backdrop-blur-sm text-white text-[11px] rounded-md font-medium">เจริญแหนมเนือง</span>
-</div>
-<div class="p-4">
-<h3 class="font-bold text-lg text-gray-900">คู้บอน ซอย 1</h3>
-<p class="text-xs text-gray-500 mt-0.5">กรุงเทพฯ</p>
-</div>
-</div>
-<div class="p-4 pt-0">
-<a class="w-full inline-flex items-center justify-center gap-1.5 py-2 bg-brand-cream hover:bg-red-50 text-brand-maroon rounded-lg text-xs font-semibold transition" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
-<i class="fa-solid fa-location-dot text-brand-red"></i>
-<span class="">ดูแผนที่</span>
-</a>
-</div>
-</div>
-<!-- Branch 2 -->
-<div class="bg-white rounded-xl overflow-hidden text-gray-900 shadow-lg flex flex-col justify-between">
-<div>
-<div class="h-36 overflow-hidden relative">
-<img alt="สาขาห้วยขวาง" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBzZQIz4jX27-4cBYaincpIxc-onwd1b8A68VsE41WYLurmVzJ2ajTn-LnqsZiOySvwI2GRLA_gyNxWP6a-ONsLeXMpNeIc13eSjG-OX62yJNpYfCXwz1bGJ-yPfJzDwLgN4P5EjCrBbXD_aKtqsfDyxchgwqpnxYf0vsODCPITvuIErl4kwF2u2TIcMmVkOI5d3CPlDmhESF8eboyS-p2FFjqS574Ya76rsBqxsCz-bFpo-I9ys-ADV1HmmUb9K0gwwOiWH0cMRZ92-k">
-<span class="absolute top-2 left-2 px-2.5 py-1 bg-brand-maroon/80 backdrop-blur-sm text-white text-[11px] rounded-md font-medium">เจริญแหนมเนือง</span>
-</div>
-<div class="p-4">
-<h3 class="font-bold text-lg text-gray-900">ห้วยขวาง</h3>
-<p class="text-xs text-gray-500 mt-0.5">กรุงเทพฯ</p>
-</div>
-</div>
-<div class="p-4 pt-0">
-<a class="w-full inline-flex items-center justify-center gap-1.5 py-2 bg-brand-cream hover:bg-red-50 text-brand-maroon rounded-lg text-xs font-semibold transition" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
-<i class="fa-solid fa-location-dot text-brand-red"></i>
-<span class="">ดูแผนที่</span>
-</a>
-</div>
-</div>
-<!-- Branch 3 -->
-<div class="bg-white rounded-xl overflow-hidden text-gray-900 shadow-lg flex flex-col justify-between">
-<div>
-<div class="h-36 overflow-hidden relative">
-<img alt="สาขาเรวดี" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqqvO3GnrCWw1QCMm2mbTbCgVrPBIZ5NmdXCET-X75jDuWD5a5tPxYQWUk9iEPPzPlKtWbdNXw_zJU2bTtddQYwKi7-VxZ3e_88nxiIIfWboVQxq3_6qgPoaUkehgYB1qePBwjX8YSNeC3ua5CKMdBGLDRyrzByWYNSsqMxQ904M767dskN0MHttSKYjXmTfYKldxhWu7IUEKRuxPpFTnF40TYpsJibX-PNxra59Oyus1vfM1812xzNpAv8qXBl0r9yrT5tmP1Op1nr2A">
-<span class="absolute top-2 left-2 px-2.5 py-1 bg-brand-maroon/80 backdrop-blur-sm text-white text-[11px] rounded-md font-medium">เจริญแหนมเนือง</span>
-</div>
-<div class="p-4">
-<h3 class="font-bold text-lg text-gray-900">เรวดี</h3>
-<p class="text-xs text-gray-500 mt-0.5">นนทบุรี</p>
-</div>
-</div>
-<div class="p-4 pt-0">
-<a class="w-full inline-flex items-center justify-center gap-1.5 py-2 bg-brand-cream hover:bg-red-50 text-brand-maroon rounded-lg text-xs font-semibold transition" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
-<i class="fa-solid fa-location-dot text-brand-red"></i>
-<span class="">ดูแผนที่</span>
-</a>
-</div>
-</div>
-<!-- Branch 4 -->
-<div class="bg-white rounded-xl overflow-hidden text-gray-900 shadow-lg flex flex-col justify-between">
-<div>
-<div class="h-36 overflow-hidden relative">
-<img alt="สาขาบางแสน" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBleGUslpEBUFf8e-R5WUCIW7Ay8PPTH5J8eBp_I1gmelOvpL7HDNvodAlHN9NvkwHJce9qtNQ7a9kF0lf1-HN7j6LYI4g0ReioWnR4TzuNUvd9yqwi4kx_IMNBJ1jl6CjLYPbzp3ghJHYMyhUFV1fGXihbB4fgzchV6LFwFGRULUYQVSmipzP4T-uTdauCCFEGdJQXfi0Wcb5BY9uK_0cFCyYXkU0up8DtS6j0JwZa0dQrjcNGSYu2Qw-05MFAyn1mLmreefGy5YuvlW0">
-<span class="absolute top-2 left-2 px-2.5 py-1 bg-brand-maroon/80 backdrop-blur-sm text-white text-[11px] rounded-md font-medium">เจริญแหนมเนือง</span>
-</div>
-<div class="p-4">
-<h3 class="font-bold text-lg text-gray-900">บางแสน</h3>
-<p class="text-xs text-gray-500 mt-0.5">ชลบุรี</p>
-</div>
-</div>
-<div class="p-4 pt-0">
-<a class="w-full inline-flex items-center justify-center gap-1.5 py-2 bg-brand-cream hover:bg-red-50 text-brand-maroon rounded-lg text-xs font-semibold transition" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
-<i class="fa-solid fa-location-dot text-brand-red"></i>
-<span class="">ดูแผนที่</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: BranchesSection -->
-<!-- BEGIN: WholesaleSection -->
-<section class="py-16 lg:py-20 bg-white" data-purpose="wholesale-service" id="wholesale">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<!-- Left: Wholesale Text & Highlights -->
-<div>
-<h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">ขายส่งวัตถุดิบ</h2>
-<p class="mt-3 text-base text-gray-600 font-light leading-relaxed">
-            สำหรับร้านค้า พ่อค้าแม่ค้า และผู้ที่อยากเริ่มต้นขายแหนมเนือง การันตีวัตถุดิบเกรดพรีเมียม สดใหม่ รสชาติเป็นเลิศ
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface font-bold">
+            ขายส่งวัตถุดิบ
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            สำหรับร้านค้า พ่อค้าแม่ค้า และผู้ที่อยากเริ่มต้นขายแหนมเนือง
           </p>
-<!-- 4 Advantage Badges -->
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8">
-<div class="text-center p-3 rounded-xl bg-gray-50 hover:bg-red-50/50 transition">
-<div class="w-12 h-12 mx-auto rounded-full bg-white shadow-sm flex items-center justify-center text-brand-red mb-2">
-<i class="fa-solid fa-award text-lg"></i>
 </div>
-<h5 class="text-xs font-bold text-gray-800">วัตถุดิบคุณภาพ</h5>
-</div>
-<div class="text-center p-3 rounded-xl bg-gray-50 hover:bg-red-50/50 transition">
-<div class="w-12 h-12 mx-auto rounded-full bg-white shadow-sm flex items-center justify-center text-brand-red mb-2">
-<i class="fa-solid fa-tags text-lg"></i>
-</div>
-<h5 class="text-xs font-bold text-gray-800">ราคาส่งคุ้มค่า</h5>
-</div>
-<div class="text-center p-3 rounded-xl bg-gray-50 hover:bg-red-50/50 transition">
-<div class="w-12 h-12 mx-auto rounded-full bg-white shadow-sm flex items-center justify-center text-brand-red mb-2">
-<i class="fa-solid fa-headset text-lg"></i>
-</div>
-<h5 class="text-xs font-bold text-gray-800">มีคำแนะนำ</h5>
-</div>
-<div class="text-center p-3 rounded-xl bg-gray-50 hover:bg-red-50/50 transition">
-<div class="w-12 h-12 mx-auto rounded-full bg-white shadow-sm flex items-center justify-center text-brand-red mb-2">
-<i class="fa-solid fa-graduation-cap text-lg"></i>
-</div>
-<h5 class="text-xs font-bold text-gray-800 leading-tight">สอนฟรี<br><span class="text-[10px] text-gray-500 font-normal">ไม่มีค่าใช้จ่าย</span></h5>
-</div>
-</div>
-<!-- Wholesale Inquiry CTA -->
-<a class="inline-flex items-center gap-3 px-7 py-3.5 bg-brand-red hover:bg-brand-redHover text-white font-medium rounded-full shadow-md hover:shadow-lg transition duration-200" href="https://line.me" rel="noopener noreferrer" target="_blank">
+<ul class="flex flex-col gap-3 py-2 w-full">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">มีวัตถุดิบแหนมเนืองสำหรับขายส่ง คุณภาพสม่ำเสมอ</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">เหมาะสำหรับร้านอาหาร คาเฟ่ และผู้เริ่มต้นขาย</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">มีราคาส่งพิเศษสำหรับพ่อค้าแม่ค้า</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">มีคำแนะนำในการเริ่มต้นธุรกิจและเทคนิคการจัดเก็บ</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold text-primary">สอนเทคนิคการม้วนและจัดเสิร์ฟฟรี ไม่มีค่าใช้จ่าย</span>
+</li>
+</ul>
+<a class="open-line-modal inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container active:scale-95 transition-all" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.35) 0px 4px 16px;" target="_blank">
+<span class="material-symbols-outlined text-[20px]">contact_support</span>
 <span class="">สอบถามขายส่ง / เรียนฟรี</span>
-<i class="fa-solid fa-arrow-right text-sm"></i>
 </a>
 </div>
-<!-- Right: Box / Packaging Showcase Image -->
-<div class="relative">
-<div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 group">
-<img alt="วัตถุดิบและกล่องสินค้า เจริญแหนมเนือง" class="w-full h-full object-cover group-hover:scale-102 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTxkQvELviz_wltkLiuxWZV4DnyPqi1gqT0eBOW1V8TfY0aEtLI5i3Oi9-pqOlDMsPtfYoUNnhBUgblmcED3IfV1-KEiPjNQ43WznUn3NwPZzhThqGHA5SEVx2OSJKoJZOVHazGowYCUS49Lvc2vplIko7L6_7om02xIzFH4nBBjmhAeCceIAIauZHK05tmvKrz1-Qh-lGnM7TSLizzV9T-3sUONxbz286PGueBLKeYEcnUI3ZeKjnmunN80D4OlOqhN-glkdVv2QMwq4">
-<div class="absolute bottom-4 right-4 bg-black/75 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs font-medium">
-              กล่องบรรจุมาตรฐาน ส่งทั่วประเทศ
-            </div>
-</div>
+<div class="flex-1 w-full">
+<div class="aspect-[4/3] w-full rounded-lg overflow-hidden shadow-md bg-surface-container-low">
+<img alt="โรงงานผลิตและจัดส่งแหนมเนืองขายส่ง" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB7K0Ai2yGtOA7_DQuKOoFnzcpkKU_gb0_odGN2TLJU0ani2CuL-0MlMCuGY3yEak9_kwesqJESNS2DDaMdROX9DSqMxcWd1S5Ohl9NyN-mALZBDdHAQpIkp0Lb4_m7jvWv8JKC6oTi-Qy4VeYNXrTi6KF7U0KTFjOJBTI3L8_ga_eE5w24UXync10b0E9fXBY2XSwIXLIHqB6-2fZ83Mh7i_A1ZrwK16L4LEcYAYwHH_8wyvaYnhrlTA0fIMMYm4JVdRWJr5kFgzqDa8"/>
 </div>
 </div>
 </div>
 </section>
-<!-- END: WholesaleSection -->
-<!-- BEGIN: EventCateringBanner -->
-<section class="relative py-20 bg-gray-900 overflow-hidden text-white" data-purpose="event-catering-banner" id="catering">
-<!-- Background Image with Overlay -->
-<img alt="งานออกบูธ เจริญแหนมเนือง" class="absolute inset-0 w-full h-full object-cover object-center filter brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgiR1OzJHZQTKrCadEDkoUtJjbY5cNMsBk9xxpdSW8mBi_ZwZ_iQoOSLwmh4gVzEx4wG0mQw_dXM3A3ip2qnTYT6WjDrlyEvxY7uDx1PRq8fjOVX3Hewyq5EU1UET33QsCxnLKo_trFcmSTTqQg831JzZlf5ItleBcURgSMTIAwMp6UWOnrLuGP2Snkv_Iha810x-Zxkg1FcjzicNIvqjWXqnOpX13FBagbKLFhY7WIBmr27j2MqlRwg">
-<div class="absolute inset-0 banner-dark-overlay"></div>
-<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="max-w-2xl">
-<h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">รับออกบูธ</h2>
-<p class="mt-3 text-base sm:text-lg text-gray-200 font-light leading-relaxed">
-          พร้อมออกบูธสำหรับงานอีเวนต์ งานตลาด และพื้นที่กิจกรรมต่างๆ จัดเต็มทั้งอุปกรณ์และทีมงานมืออาชีพ รสชาติอร่อยมาตรฐานเดียวกับที่ร้าน
+<!-- BOOTH / EVENT SECTION -->
+<section class="w-full px-margin-mobile md:px-margin py-12 scroll-mt-20" id="booth">
+<div class="max-w-7xl mx-auto rounded-xl bg-surface-container-lowest p-space-md md:p-space-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm w-fit font-bold">
+<span class="">EVENT &amp; CATERING</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface font-bold">
+          รับออกบูธ
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          เจริญแหนมเนือง พร้อมออกบูธสำหรับงานอีเวนต์ งานจัดเลี้ยง สัมมนา งานตลาด และพื้นที่กิจกรรมต่างๆ ยกระดับอาหารอร่อย สะอาด สะดวกรวดเร็ว
         </p>
-<div class="mt-8">
-<a class="inline-flex items-center gap-2 px-7 py-3 bg-brand-red hover:bg-brand-redHover text-white font-medium rounded-full shadow-lg transition duration-200" href="https://line.me" rel="noopener noreferrer" target="_blank">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<span class="font-label-md text-label-md text-on-surface">ทีมงานมืออาชีพ</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">aspect_ratio</span>
+<span class="font-label-md text-label-md text-on-surface">จัดการพื้นที่ได้ทุกขนาด</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<span class="font-label-md text-label-md text-on-surface">รสชาติมาตรฐาน</span>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 w-full md:w-auto">
+<a class="open-line-modal w-full md:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container active:scale-95 transition-all" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: #d90429; box-shadow: 0 4px 16px rgba(217, 4, 41, 0.35);" target="_blank">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
 <span class="">สอบถามงานออกบูธ</span>
-<i class="fa-solid fa-arrow-right text-xs"></i>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- END: EventCateringBanner -->
-<!-- BEGIN: ContactSection -->
-<section class="py-16 bg-[#faf9f6]" data-purpose="contact-channels" id="contact">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<!-- Section Title -->
-<div class="text-center max-w-xl mx-auto mb-10">
-<h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">ช่องทางติดต่อ</h2>
-<p class="mt-2 text-sm text-gray-500 font-light">สอบถาม สั่งซื้อ หรือร่วมงานกับเรา ได้ผ่านทุกช่องทาง</p>
-</div>
-<!-- 5 Social / Contact Cards Grid -->
-<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-<!-- Contact Card: LINE -->
-<a class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col items-center justify-center text-center transition group hover:-translate-y-1" href="https://line.me" rel="noopener noreferrer" target="_blank">
-<div class="w-14 h-14 rounded-full bg-[#06C755]/10 text-[#06C755] flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-line"></i>
-</div>
-<span class="font-bold text-gray-900 text-sm">LINE</span>
-<span class="text-[11px] text-gray-500 mt-0.5">@292sofkm</span>
-</a>
-<!-- Contact Card: Phone -->
-<a class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col items-center justify-center text-center transition group hover:-translate-y-1" href="tel:0623314304">
-<div class="w-14 h-14 rounded-full bg-brand-maroon/10 text-brand-maroon flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-phone"></i>
-</div>
-<span class="font-bold text-gray-900 text-sm">โทร</span>
-<span class="text-[11px] text-gray-500 mt-0.5">062-331-4304</span>
-</a>
-<!-- Contact Card: Instagram -->
-<a class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col items-center justify-center text-center transition group hover:-translate-y-1" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
-<div class="w-14 h-14 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-instagram"></i>
-</div>
-<span class="font-bold text-gray-900 text-sm">Instagram</span>
-<span class="text-[11px] text-gray-500 mt-0.5">@charoen_namnueng</span>
-</a>
-<!-- Contact Card: Facebook -->
-<a class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col items-center justify-center text-center transition group hover:-translate-y-1" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-<div class="w-14 h-14 rounded-full bg-blue-50 text-[#1877F2] flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
-<i class="fa-brands fa-facebook-f"></i>
-</div>
-<span class="font-bold text-gray-900 text-sm">Facebook</span>
-<span class="text-[10px] text-gray-500 mt-0.5 line-clamp-1">เจริญแหนมเนือง ขายส่ง-ปลีก</span>
-</a>
-<!-- Contact Card: Linktree -->
-<a class="bg-white p-5 rounded-2xl shadow-sm hover:shadow-md border border-gray-100 flex flex-col items-center justify-center text-center transition group hover:-translate-y-1 col-span-2 sm:col-span-1" href="https://linktr.ee" rel="noopener noreferrer" target="_blank">
-<div class="w-14 h-14 rounded-full bg-green-50 text-green-700 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
-<i class="fa-solid fa-link"></i>
-</div>
-<span class="font-bold text-gray-900 text-sm">Linktree</span>
-<span class="text-[10px] text-gray-500 mt-0.5">linktr.ee/jaroennamnueng</span>
 </a>
 </div>
 </div>
 </section>
-<!-- END: ContactSection -->
-<!-- BEGIN: MainFooter -->
-<footer class="bg-white border-t border-gray-100 py-8" data-purpose="site-footer">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 font-light">
-<p class="">© 2025 เจริญแหนมเนือง. สงวนลิขสิทธิ์ทุกประการ</p>
-<div class="flex items-center gap-6">
-<a class="hover:text-brand-red transition" href="#">นโยบายความเป็นส่วนตัว</a>
-<a class="hover:text-brand-red transition" href="#">ข้อกำหนดการให้บริการ</a>
+<!-- ABOUT SECTION -->
+<section class="w-full px-margin-mobile md:px-margin py-12 scroll-mt-20"><div class="max-w-7xl mx-auto rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-xl p-space-md md:p-space-xl"><div class="flex-1 flex flex-col items-start gap-space-md"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">two_wheeler</span><span class="">ส่งด่วน อิ่มท้อง สะดวกสบาย</span></div><h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface font-bold">แหนมเนือง Online สะดวกช่องทางไหน เลือกเลย</h2><p class="font-body-md text-body-md text-on-surface-variant">สั่งผ่านเดลิเวอรี่ชั้นนำ GrabFood, LINE MAN และ ShopeeFood ส่งตรงถึงบ้านความอร่อยเหมือนทานที่ร้าน</p><div class="flex flex-wrap items-center gap-space-sm pt-2"><a class="open-line-modal inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container active:scale-95 transition-all" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="">สั่งเลย Delivery Now</span></a><a class="inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high active:scale-95 transition-all" href="tel:0623314304"><span class="material-symbols-outlined text-[20px]">call</span><span class="">โทรสั่งโดยตรง</span></a></div></div><div class="w-full md:w-[380px] flex-shrink-0"><div class="aspect-square w-full rounded-lg overflow-hidden shadow-md bg-surface-container-low"><img alt="แหนมเนือง Online สั่งเลย" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7t5TLAvP20fZxDEHf674Pfa_ZjlpFivkReNtRbGdtwjsumUm9VOvZw_KUbisy6jP44-aiC9CmXuIy6aLOifxBqpkMCL0Z2JP13QjT8z_SsMm7w6fUqm0qSDiYvfexF6zS1Ep9LtEgzqAlwAwT_-mkZrcnyxlVFTj6og_jGN0Dd3KQGQ_qAn6RKh0n2RyfzJofG9u_V9XWvOw6yJ8qh9Pq9PQYXZFk0DvFXSulc8Zr11eJDLFaUEQzjnlPoX4jNB-eDuk"/></div></div></div></section><section class="w-full px-margin-mobile md:px-margin py-12 scroll-mt-20 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1 text-center items-center">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Our Heritage &amp; Promise</span>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface font-bold">เกี่ยวกับเจริญแหนมเนือง</h2>
 </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-lowest shadow-sm gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[22px]">local_florist</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">ความสดใหม่และสุขอนามัย</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            คัดสรรวัตถุดิบเกรดพรีเมียมทุกวัน ผักสดล้างสะอาดปลอดภัยตามมาตรฐานสุขอนามัยอาหารสากล
+          </p>
+</div>
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-lowest shadow-sm gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[22px]">outdoor_grill</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">หมูหมักสูตรต้นตำรับ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            วัตถุดิบคุณภาพ หมูหมักเครื่องเทศเฉพาะตัว ย่างจนหอมกรุ่น เข้ากันได้ดีกับน้ำจิ้มสูตรลับเข้มข้น
+          </p>
+</div>
+<div class="flex flex-col p-space-md rounded-lg bg-surface-container-lowest shadow-sm gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[22px]">all_inclusive</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">สะดวกทั้งปลีกและส่ง</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            พร้อมรับประทานทั้งในรูปแบบโรลและชุดพร้อมทาน รวมถึงบริการขายส่งวัตถุดิบสำหรับร้านค้า
+          </p>
+</div>
+</div>
+<div class="mt-4 rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-center"><div class="w-full md:w-1/2 aspect-[4/3] md:aspect-auto md:h-80 overflow-hidden bg-surface-container-low"><img alt="หน้าร้านเจริญแหนมเนือง บรรยากาศจริง" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb1t9Jg4xdxbmDJeLb_Wf9dbSu0_hU4Jamg49E92i93RgGvBr44YfQ1QN-67C6L86uTbjfx2h_ABmhEabmgHfKzG-W9i7lDhwqdL5xNF9lJfBhprQ9QuE-PSQzukHYIL7muMX7IyuqUfYzESvQOipEwxLGg-pF6HzKzmBTM3C-He1FuSyaTTIK_upPyWu2tPmq5EU6LCkS5YnwquRNfwgFL_vEUU9WvuAQ1BtXy_LBw3eIS_jFoO_kejPLU7glz-k7Av0"/></div><div class="p-space-md md:p-space-xl flex-1 flex flex-col items-start gap-space-sm"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">storefront</span><span class="">หน้าร้านและครัวสะอาด</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">บรรยากาศร้านเจริญแหนมเนือง</h3><p class="font-body-sm text-body-sm text-on-surface-variant">หน้าร้านจริงที่พร้อมต้อนรับลูกค้าทุกท่าน ปรุงสดใหม่สะอาดตามมาตรฐาน ทั้งซื้อกลับบ้าน Delivery และสั่งชุดวัตถุดิบไปขาย</p><div class="flex items-center gap-2 pt-2 text-primary font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">verified</span><span class="">ยินดีต้อนรับทุกวัน 4 สาขาทั่วกรุงเทพฯและปริมณฑล</span></div></div></div></div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="w-full px-margin-mobile md:px-margin py-12 scroll-mt-20" id="contact">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1 text-center items-center">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Get In Touch</span>
+<h2 class="font-headline-lg-mobile md:font-headline-md text-headline-lg-mobile md:text-headline-md text-on-surface font-bold">ช่องทางติดต่อ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">สอบถามข้อมูล สั่งจองล่วงหน้า หรือติดต่อธุรกิจ</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- LINE Primary Card -->
+<a class="open-line-modal p-space-md rounded-lg bg-primary text-on-primary shadow-md flex items-center gap-space-md hover:bg-primary-container transition-all cursor-pointer" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.3) 0px 4px 16px;" target="_blank">
+<div class="w-12 h-12 rounded-full bg-on-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">chat</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm opacity-80">LINE Official (หลัก)</p>
+<p class="font-headline-sm text-headline-sm font-bold truncate">@292sofkm</p>
+<p class="font-body-sm text-body-sm opacity-90">คลิกเพื่อแอดไลน์สั่งซื้อทันที</p>
+</div>
+</a>
+<!-- Phone Card -->
+<a class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex items-center gap-space-md hover:bg-surface-container transition-all" href="tel:0623314304">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">call</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">เบอร์โทรศัพท์</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">062-331-4304</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">โทรสอบถามข้อมูล</p>
+</div>
+</a>
+<!-- Facebook Card -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">share</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Facebook Page</p>
+<p class="font-title-md text-title-md text-on-surface font-bold truncate">เจริญแหนมเนือง</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">ขายส่ง-ปลีก วัตถุดิบอาหารเวียดนาม</p>
+</div>
+</div>
+<!-- Instagram Card -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">photo_camera</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Instagram</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">@charoen_namnueng</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ติดตามภาพความอร่อย</p>
+</div>
+</div>
+<!-- Linktree Card -->
+<a class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex items-center gap-space-md hover:bg-surface-container transition-all" href="https://linktr.ee/Jaroennamnueng" rel="noopener noreferrer" target="_blank">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">link</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Linktree รวมทุกช่องทาง</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">linktr.ee/Jaroennamnueng</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ดูลิงก์ทั้งหมดในที่เดียว</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- FOOTER / BRANDING NOTE -->
+<footer class="w-full px-margin-mobile md:px-margin py-8 border-t-0 bg-surface-container-high/40">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">เจริญแหนมเนือง</span>
+<span class="text-on-surface-variant text-label-sm">• อาหารเวียดนามสดใหม่ สะอาด มาตรฐานทุกวัน</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        © เจริญแหนมเนือง. All rights reserved.
+      </p>
 </div>
 </footer>
-<!-- END: MainFooter -->
+</div>
+<script>
+  // Simple smooth scroll support for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-between gap-space-sm h-20 px-gutter-mobile max-w-xl mx-auto"><a class="flex-1 h-12 inline-flex items-center justify-center gap-2 rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-md text-label-md active:scale-95 transition-all shadow-[0_2px_8px_rgba(0,0,0,0.04)]" href="tel:0623314304"><span class="material-symbols-outlined text-primary text-[20px]">call</span><span class="">062-331-4304</span></a><a class="open-line-modal flex-[1.4] h-12 inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md active:scale-95 transition-all shadow-[0_4px_16px_rgba(110,4,22,0.22)]" href="https://line.me/R/ti/p/@sai292SOFKM" rel="noopener noreferrer" style="background-color: rgb(217, 4, 41); box-shadow: rgba(217, 4, 41, 0.4) 0px 4px 16px;" target="_blank"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span class="whitespace-nowrap">LINE @292SOFKM</span></a></div></nav>
+<!-- LINE QR Code Modal Popup -->
+<div aria-labelledby="line-modal-title" aria-modal="true" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/65 backdrop-blur-sm transition-opacity duration-300 opacity-0" id="line-modal" role="dialog">
+<div class="relative w-full max-w-sm rounded-3xl bg-surface-container-lowest p-6 shadow-2xl border border-outline-variant/30 flex flex-col items-center text-center transform scale-95 transition-all duration-300" id="line-modal-card">
+<!-- Close button -->
+<button aria-label="ปิดหน้าต่าง" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-variant active:scale-90 transition-all" id="line-modal-close" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Brand & LINE Icon Header -->
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full flex items-center justify-center text-white shadow-sm" style="background-color: #06C755;">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.066.495.222l2.46 3.342V8.108c0-.345.282-.63.63-.63.345 0 .626.285.626.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"></path></svg>
+</div>
+<span class="font-label-sm text-[13px] font-bold text-[#06C755] uppercase tracking-wider">LINE Official Account</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold" id="line-modal-title">ติดต่อ เจริญแหนมเนือง ผ่าน LINE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">สแกน QR Code หรือเพิ่มเพื่อนได้ทันที</p>
+<!-- QR Code Display Box -->
+<div class="mt-4 p-3 bg-white rounded-2xl shadow-md border border-outline-variant/40 flex items-center justify-center">
+<img alt="LINE QR Code เจริญแหนมเนือง" class="w-52 h-52 object-contain rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0R01JE-_p9Q59MIqpW0FVSbZJOLuAnLLOo_GKeYQoDbDEw4DDwOMgkPQSjwlExx3Kc4XnoQF4so8XcUnTGMNKrBziSvvj0CwPmfBx_F0co50kj6lYdl8p1IoYyAnI0cKjLYua1TpQcgDft5v_0MxIQBWHyHKmE_U9Dd3gejqiuRgRgrdlmTfYCvN4EVRmdlVoQ7HLxvZPO56EJznFAa36ZAaNcQe35JDDBppj8VPuHI4o2c4pforAUK8kff82-jOI4iI"/>
+</div>
+<!-- LINE ID & Copy Box -->
+<div class="mt-4 w-full flex items-center justify-between gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container border border-outline-variant/30">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[#06C755] text-[20px] flex-shrink-0">alternate_email</span>
+<span class="font-label-md text-[14px] text-on-surface font-semibold truncate select-all" id="line-id-text">@sai292SOFKM</span>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white hover:bg-surface-container-high text-on-surface font-label-sm text-[12px] font-bold shadow-sm active:scale-95 transition-all flex-shrink-0" id="copy-line-id-btn" type="button">
+<span class="material-symbols-outlined text-[15px]" id="copy-icon">content_copy</span>
+<span id="copy-text">คัดลอก ID</span>
+</button>
+</div>
+<!-- Action CTA Buttons -->
+<div class="mt-4 w-full flex flex-col gap-2">
+<a class="w-full inline-flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-full text-white font-label-md text-[15px] font-bold active:scale-95 transition-all shadow-[0_4px_16px_rgba(6,199,85,0.35)] hover:opacity-95" href="https://line.me/R/ti/p/@sai292SOFKM" id="open-line-app-btn" rel="noopener noreferrer" style="background-color: #06C755;" target="_blank">
+<svg class="w-5 h-5 fill-current flex-shrink-0" viewbox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.066.495.222l2.46 3.342V8.108c0-.345.282-.63.63-.63.345 0 .626.285.626.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"></path></svg>
+<span>เปิดใน LINE ทันที</span>
+</a>
+<button class="w-full py-2.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-[14px] transition-colors" id="line-modal-dismiss-btn" type="button">
+        ปิดหน้าต่าง
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // LINE QR Code Modal Logic
+  (function() {
+    const modal = document.getElementById('line-modal');
+    const modalCard = document.getElementById('line-modal-card');
+    const closeBtn = document.getElementById('line-modal-close');
+    const dismissBtn = document.getElementById('line-modal-dismiss-btn');
+    const copyBtn = document.getElementById('copy-line-id-btn');
+    const copyText = document.getElementById('copy-text');
+    const copyIcon = document.getElementById('copy-icon');
 
+    function openModal() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      // Force repaint then animate in
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modal.classList.add('opacity-100');
+        modalCard.classList.remove('scale-95');
+        modalCard.classList.add('scale-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
 
+    function closeModal() {
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0');
+      modalCard.classList.remove('scale-100');
+      modalCard.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    // Attach listener to all LINE triggers
+    const lineTriggers = document.querySelectorAll('.open-line-modal, a[href*="line.me"]');
+    lineTriggers.forEach(el => {
+      // Don't intercept the button inside the modal itself
+      if (el.id === 'open-line-app-btn') return;
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal();
+      });
+    });
+
+    // Close on background click
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close on close button or dismiss button
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (dismissBtn) dismissBtn.addEventListener('click', closeModal);
+
+    // Escape key closes modal
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+
+    // Copy LINE ID
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        const idToCopy = '@sai292SOFKM';
+        navigator.clipboard.writeText(idToCopy).then(() => {
+          copyText.textContent = 'คัดลอกแล้ว!';
+          copyIcon.textContent = 'done';
+          setTimeout(() => {
+            copyText.textContent = 'คัดลอก ID';
+            copyIcon.textContent = 'content_copy';
+          }, 2000);
+        }).catch(() => {
+          copyText.textContent = '@sai292SOFKM';
+        });
+      });
+    }
+  })();
+</script>
 </body></html>
